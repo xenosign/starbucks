@@ -32,3 +32,17 @@ header .header_inner .logo {
     left: 0;
     margin: auto;
 }
+
+header .sub_menu {}
+
+header .sub_menu ul.menu {}
+
+header .sub_menu ul.menu li {}
+
+header .sub_menu ul.menu li a {}
+
+header .sub_menu .search {}
+
+header .sub_menu .search input {}
+
+header .sub_menu .search .material-symbols-outlined {}
