@@ -13,19 +13,18 @@ img {
 
 /* HEADER */
 header {
-    background-color: skyblue;
+    background-color: #f6f5ef;
+    border-bottom: 1px solid #c8c8c8;
 }
 
-header .header_inner {
+header .inner {
     position: relative;
-    background-color: orange;
     width: 1100px;
     height: 120px;
     margin: 0 auto;
 }
 
-header .header_inner .logo {
-    display: none;
+header .inner .logo {
     position: absolute;
     height: 75px;
     top: 0;
@@ -34,16 +33,36 @@ header .header_inner .logo {
     margin: auto;
 }
 
-header .sub_menu {}
+header .sub_menu {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
 
 header .sub_menu ul.menu {
     display: flex;
+    font-family: Arial, sans-serif;
 }
 
-header .sub_menu ul.menu li {}
+header .sub_menu ul.menu li {
+    position: relative;
+}
+
+header .sub_menu ul.menu li:not(:first-child)::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #656565;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 header .sub_menu ul.menu li a {
-    background-color: white;
+    display: block;
     font-size: 12px;
     padding: 10px 15px;
     color: #656565;
@@ -54,8 +73,66 @@ header .sub_menu ul.menu li a:hover {
     color: #000;
 }
 
-header .sub_menu .search {}
+header .sub_menu .search {
+    position: relative;
+    height: 34px;
+}
 
-header .sub_menu .search input {}
+header .sub_menu .search input {
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    transition: width 0.4s;
+}
 
-header .sub_menu .search .material-symbols-outlined {}
+header .sub_menu .search input:focus {
+    width: 190px;
+    color: #656565;
+    font-size: 12px;
+    border-color: #00704A;
+}
+
+header .sub_menu .search input:focus {
+    width: 190px;
+    color: #656565;
+    font-size: 12px;
+    border-color: #00704A;
+}
+
+header .sub_menu .search .material-symbols-outlined {
+    position: absolute;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    right: 3px;
+    margin: auto;
+}
+
+header .main_menu {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Avenir, Arial, georgia;
+}
+
+header .main_menu .items {}
+
+header .main_menu .items .item__name {
+    display: block;
+    padding: 10px 20px 34px 20px;
+    font-size: 13px;
+}
+
+header .main_menu .items:hover .item__name {
+    background-color: #2c2a29;
+    color: #669900;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+header .main_menu .items .item__contents {}
