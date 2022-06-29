@@ -25,6 +25,7 @@ header .header_inner {
 }
 
 header .header_inner .logo {
+    display: none;
     position: absolute;
     height: 75px;
     top: 0;
@@ -35,11 +36,23 @@ header .header_inner .logo {
 
 header .sub_menu {}
 
-header .sub_menu ul.menu {}
+header .sub_menu ul.menu {
+    display: flex;
+}
 
 header .sub_menu ul.menu li {}
 
-header .sub_menu ul.menu li a {}
+header .sub_menu ul.menu li a {
+    background-color: white;
+    font-size: 12px;
+    padding: 10px 15px;
+    color: #656565;
+    text-decoration: none;
+}
+
+header .sub_menu ul.menu li a:hover {
+    color: #000;
+}
 
 header .sub_menu .search {}
 
