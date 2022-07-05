@@ -241,12 +241,11 @@ header .main_menu .item .item__contents .contents__addition .inner>span {
 header .badges {
     position: absolute;
     top: 132px;
-    right: 12px;    
+    right: 12px;
 }
 
 header .badges .badge {
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 header .badges .badge img {}
-
